@@ -1,3 +1,4 @@
+/*
 .App {
   text-align: center;
 }
@@ -35,4 +36,59 @@
   to {
     transform: rotate(360deg);
   }
+}
+*/
+@keyframes slideRight {
+  from {
+    transform: translateX(-100%); 
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+.Background{
+  background-color: black;
+  height: 1000px;
+  
+}
+
+.Header_fieldset{
+  margin:auto;
+  padding:0px;
+
+}
+
+.Header{
+  background-color: hsla(218, 100%, 20%, 0.757);
+  width:100%;
+  height:80px;
+  margin: auto;
+  display:inline-flex;
+}
+
+.appLogo,.profile{
+  height:50px;
+  width:50px;
+  padding-right: 3px;
+}
+
+.options{
+  margin-left: 1000px;
+  margin-right:auto;
+  color: azure;
+}
+
+.optionItem{
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.Entrepreneur-pic{
+  width:50%;
+  height:50%;
+  padding-top:20px ;
+  padding-left:20px;
+  position: relative;
+  animation: slideRight 1s ease-in-out forwards;
 }
